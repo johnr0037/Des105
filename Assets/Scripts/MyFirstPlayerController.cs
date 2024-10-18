@@ -56,8 +56,11 @@ public class MyFirstPlayerController : MonoBehaviour
         }
         transform.position = transform.position + myMovement*mySpeed;
     }
+<<<<<<< HEAD
 
     public void GameOver() {
         print("game over!");
     }
+=======
+>>>>>>> 4643e8d65791edc4e079257e41e1b305bb8c548e
 }
