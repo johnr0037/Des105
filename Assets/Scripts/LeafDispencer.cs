@@ -8,8 +8,12 @@ public class LeafDispencer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+<<<<<<< HEAD
        
      
+=======
+        Instantiate(leaf,transform.position,transform.rotation);
+>>>>>>> 9d659f70407373b2503e3ebec15d2fd7789124e2
     }
 
 
@@ -22,6 +26,7 @@ public class LeafDispencer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+<<<<<<< HEAD
         CheckKeys();
        
         //Instantiate()
@@ -37,5 +42,13 @@ public class LeafDispencer : MonoBehaviour
     public void SpawnLeaf()
     {
         Instantiate(leaf, transform.position, transform.rotation);
+=======
+        if(Input.GetKey(KeyCode.L))
+        {
+            Instantiate(leaf, transform.position, transform.rotation);
+        }
+
+        //Instantiate()
+>>>>>>> 9d659f70407373b2503e3ebec15d2fd7789124e2
     }
 }

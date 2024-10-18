@@ -25,6 +25,7 @@ public class MyFirstPlayerController : MonoBehaviour
      */
     void Update()
     {
+<<<<<<< HEAD
         CheckInputs();
     }
 
@@ -35,6 +36,9 @@ public class MyFirstPlayerController : MonoBehaviour
     public void CheckInputs()
     {
         myMovement = new Vector3(0, 0, 0);
+=======
+        myMovement = new Vector3(0,0,0);
+>>>>>>> 9d659f70407373b2503e3ebec15d2fd7789124e2
 
         if (Input.GetKey(KeyCode.W))
         {
@@ -46,7 +50,11 @@ public class MyFirstPlayerController : MonoBehaviour
             myMovement += new Vector3(mySpeed, 0f, 0f);
             //transform.position
         }
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 9d659f70407373b2503e3ebec15d2fd7789124e2
         if (Input.GetKey(KeyCode.S))
         {
             myMovement += new Vector3(0f, -mySpeed, 0f);
@@ -63,6 +71,18 @@ public class MyFirstPlayerController : MonoBehaviour
             myMovement.Normalize();
             print("Value after normalisation: " + myMovement);
         }
+<<<<<<< HEAD
         transform.position = transform.position + myMovement * mySpeed;
     }
+=======
+        transform.position = transform.position + myMovement*mySpeed;
+    }
+<<<<<<< HEAD
+
+    public void GameOver() {
+        print("game over!");
+    }
+=======
+>>>>>>> 4643e8d65791edc4e079257e41e1b305bb8c548e
+>>>>>>> 9d659f70407373b2503e3ebec15d2fd7789124e2
 }
